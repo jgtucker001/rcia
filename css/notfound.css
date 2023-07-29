@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+}
+.bg {
+    /* Image Used  */
+    background-image: url("../images/autumnroad.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    /* filter: blur(8px); */
+}
+.redhead {
+    background-color: lightpink;
+    color: red;
+    border: lightpink solid thin;
+    border-bottom: black solid thin;
+    font-family: "Lobster", Sans-serif;
+  }
+  .nferror {
+    margin-top: 200px;
+    margin-left: 600px; 
+    width: 400px;
+    text-align: center;
+    /* height: 100px; */
+    background-color: yellow;
+    color: red;
+    border: red inset 8px;
+    border-radius: 30px;
+  }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>RCIA at Our Lady of Peace, Fords, NJ</title>
+        <!-- CSS Tags -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!-- JS Tags -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <style>
+            body {
+              background-image: url('../../images/papertexture.jpg');
+              background-color: blanchedalmond;
+            }
+        </style>  
+    </head>
+    <body ng-app="">
+        <header class="heading">
+            <h2>Process of RCIA</h2>
+        </header><br>
+        <div class="container">
+           <form>
+               Stages of RCIA:&NonBreakingSpace;
+               <select ng-model="myVar">
+                    <option value="" selected>Choose a Step in Process</option>
+                    <option value="precat">Pre-Catechumenate</option>
+                    <option value="stage1">Rite of Acceptance</option>
+                    <option value="stage2">Catechumenate</option>
+                    <option value="stage3">Rite of Election</option>
+                    <option value="stage4">Lent</option>
+                    <option value="stage5">Initiation</option>
+                    <option value="stage6">Mystagogy</option>
+               </select>
+           </form>
+<br><br>
+           <div ng-switch="myVar">
+               <div ng-switch-when="precat">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Pre-Catechumenate</h2>
+                        <p>Period of Precatechumenate (Inquiry) has as its purpose and time: to become acquainted with the Roman Catholic Church, 
+                            to hear the good news of salvation from Jesus Christ our Savior and look within at one's one life story and see connections 
+                            to or needs for the gospel story of good news. This period lasts as long as the person needs it to last, from a few months 
+                            to several years, if necessary.</p>
+                    </blockquote>
+               </div>
+               <div ng-switch-when="stage1">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Rite of Acceptance</h2>
+                        <p>The Rite of Acceptance (and/or Welcome) is a liturgical rite, marking the beginning of the catechumenate proper, 
+                            as the candidates express and the Church accepts their intention to respond to God's call to follow the way 
+                            of Christ. (RCIA, Part 1)</p>
+                    </blockquote>
+                </div>
+                <div ng-switch-when="stage2">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Period of Catechumenate</h2>
+                        <p>Period of catechumenate embodies the first stages of commitment leading to full membership. 
+                            It is the lengthiest period of the initiation process.</p>
+                    </blockquote>
+                </div>
+                <div ng-switch-when="stage3">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Rite of Election</h2>
+                        <p>The Rite of Election (and Call to Continuing Conversion) is the liturgical rite, celebrated at the Cathedral, 
+                            on the First Sunday of Lent, by which the Church formally ratifies the catechumens' readiness for the sacraments 
+                            of initiation and recognizes the candidates preparing for reception into the full communion of the Catholic Church.</p>
+                    </blockquote>
+                </div>
+                <div ng-switch-when="stage4">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Purificaton & Enlightenment (LENT)</h2>
+                        <p>The Period of Purification and Enlightenment corresponds to that time known in the Roman Catholic Church as Lent and 
+                            has the character of a time of retreat for the elect who are preparing for Baptism, for the candidates who will complete 
+                            their initiation or enter the full communion of the Catholic Church, and for the faithful who will commemorate their 
+                            own Baptism at Easter.</p>
+                            <p>The centerpiece of this period of prayerful preparation is the celebration of the <b>Scrutinies</b>. Although the candidates 
+                                will not be the subject of the Scrutinies, catechesis for both the elect and the candidates during this period is 
+                                related to the celebration of the Scrutinies.</p>
+                            <p>The Scrutinies are celebrated on the third, fourth, and fifth Sundays of the Lenten season. At the Masses at which 
+                                the Scrutinies are celebrated, the cycle A readings must be used (RCIA no.146).</p>
+                    </blockquote>
+                </div>
+                <div ng-switch-when="stage5">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Sacraments of Initiation</h2>
+                        <p>The Sacraments of Initiation is the liturgical rite, integrated into the Easter Vigil, by which the elect are initiated 
+                            through Baptism, Confirmation, and the Eucharist. (RCIA Part 1)</p>
+                            <p>Reception of baptized Christians (candidates) into the full communion of the Catholic Church can be integrated into 
+                                the Easter Vigil or may be celebrated, within Mass, at another time, when the candidate is ready.</p>
+                    </blockquote>
+                </div>
+                <div ng-switch-when="stage6">
+                    <blockquote class="block-r shadw-n">
+                        <h2>Mystagogy</h2>
+                        <p>The Period of Mystagogy lasts from Easter Sunday until the completion of the Easter season, fifty days later on Pentecost 
+                            Sunday and completes the initiation process. Those who have just shared in the sacraments of initiation are now called 
+                            Neophytes and during this period of Easter joy they reflect on what they have just gone through and look to the future 
+                            as to how they can now share in the mission of Christ who came to bring salvation and life to the whole world. The Bishop 
+                            gathers with the neophytes for a Eucharistic celebration during the Easter season.</p>
+                    </blockquote>
+                </div>
+           </div>
+
+        </div>
+    </body>
+</html>
